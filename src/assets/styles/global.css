@@ -1,0 +1,135 @@
+:root {
+  --input-color: #99A3BA;
+  --input-border: #CDD9ED;
+  --input-background: #fff;
+  --input-placeholder: #CBD1DC;
+
+  --input-border-focus: #275EFE;
+
+  --group-color: var(--input-color);
+  --group-border: var(--input-border);
+  --group-background: #EEF4FF;
+
+  --group-color-focus: #fff;
+  --group-border-focus: var(--input-border-focus);
+  --group-background-focus: #678EFE;
+
+  --label-color-focus: #275EFE; 
+
+  --button-color-hover:#275EFE;
+  --button-color: #99A3BA;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding-top: 40px;
+  font-family: 'Mukta Malar', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #F5F9FF;
+  margin: 0;
+}
+.h2-header{
+  color: var(--input-border-focus);
+}
+.form-group {
+  max-width: 360px;
+  margin-bottom: 32px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Ensure label is positioned relative to form-group */
+}
+
+.form-group label {
+  font-size: 14px;
+  color: var(--input-color);
+  margin-bottom: 8px;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.form-field {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  -webkit-appearance: none;
+  color: var(--input-color);
+  border: 1px solid var(--input-border);
+  background: var(--input-background);
+  transition: border 0.3s ease;
+}
+
+.form-field::placeholder {
+  color: var(--input-placeholder);
+}
+
+.form-field:focus {
+  outline: none;
+  border-color: var(--input-border-focus);
+}
+
+.form-group:focus-within label {
+  color: var(--label-color-focus); /* Change label color when input is focused */
+}
+.button-dalej{
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 3px;
+  font-weight: 300;
+  color: var(--button-color);
+  border: 1px solid var(--button-color);
+  transition: color 0.3s ease;
+}
+.button-dalej:hover{
+  color: white;
+  background:var(--group-background-focus);
+  border: 1px solid var(--label-color-focus);
+}
+.button-delete{
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 3px;
+  font-weight: 300;
+  color: var(--button-color);
+  border: 1px solid var(--button-color);
+  transition: color 0.3s ease;
+}
+.button-delete:hover{
+  color: white;
+  background:var(--group-background-focus);
+  border: 1px solid var(--label-color-focus);
+}
+hr{
+  width: 70%;
+  margin-left: 0;
+  margin-top: 10px;
+}
+.pt{
+  padding-top: 20px;
+  width: 80%;
+  
+}
+.button-bottom{
+  margin-right: 20px;
+}
+.margin-top{
+  margin-top: 20px;
+  align-items: center;
+  margin-left: 25%;
+}
